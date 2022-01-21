@@ -29,7 +29,8 @@ jobs:
         id: deploy-function
         uses: google-github-actions/deploy-cloud-functions@v0.1.0
         with:
-          name: hello_world
+          name: hello-world
+          entry_point: hello_world
           runtime: python38
           project_id: ${{ secrets.gcp_project }}
           credentials: ${{ secrets.gcp_credentials }}
