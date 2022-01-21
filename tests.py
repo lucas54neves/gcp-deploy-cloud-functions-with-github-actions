@@ -6,5 +6,9 @@ class TestMain(unittest.TestCase):
         self.assertEqual((1+2), 3, 'It is just a test')
 
 
+    def test_failure(self):
+        self.assertEqual(4, 3, 'It is just a test')
+
+
 if __name__ == '__main__':
     unittest.main()
