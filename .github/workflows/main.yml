@@ -33,7 +33,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r src/requirements.txt
 
       - name: Run tests
         run: python tests.py
@@ -47,3 +47,4 @@ jobs:
           runtime: python38
           project_id: ${{ secrets.gcp_project }}
           credentials: ${{ secrets.gcp_credentials }}
+          source_dir: ./src/
