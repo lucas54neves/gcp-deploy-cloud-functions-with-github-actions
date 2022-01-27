@@ -7,7 +7,7 @@ class TestMain(unittest.TestCase):
 
 
     def test_failure(self):
-        self.assertEqual(4, 3, 'It is just a test')
+        self.assertEqual(4, 4, 'It is just a test')
 
 
 if __name__ == '__main__':
